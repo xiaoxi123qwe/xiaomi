@@ -941,7 +941,9 @@ li{
     float: right;
     line-height: 18px;
 }
-
+.banner_dian2{
+	background: rgba(255,255,255,0.4);
+}
 .head_wenzi:hover{
 	color: #fff;
 }
@@ -1035,6 +1037,9 @@ li{
 	transition: bottom 1s linear,opacity 1s linear;	
 	opacity: 0;
 	text-align: center;
+	cursor: pointer;
+	color: #fff;
+	font-size: 20px;
 }
 .yingjian_item:hover .yingjian_tan{
 	bottom:0;
@@ -1066,4 +1071,28 @@ li{
 }
 .dapei_zhekou1{
 	background-color: #83c44e;
+}
+.danpin_item img{
+	cursor: pointer;
+}
+.danpin_item h1{
+	cursor: pointer;
+}
+.yingjian_bottom img{
+	cursor: pointer;
+}
+.dapei_bottom img{
+	cursor: pointer;
+}
+.tuijian_bottom img{
+	cursor: pointer;
+}
+.reping_bottom img{
+	cursor: pointer;
+}
+.neirong_bottom img{
+	cursor: pointer;
+}
+.shipin_bofang img{
+	cursor: pointer;
 }
