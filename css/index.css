@@ -68,14 +68,24 @@
 	padding: 0 10px; 
 	cursor: pointer;
 }
-.search{
+/* .search{
 	border:1px solid #e0e0e0;
 	width: 294px;
 	height: 48px;
 	float: right;
 	margin-top: 25px; 
+} */
+.search{
+	width: 294px;
+	height: 48px;
+	float: right;
+	margin-top: 25px; 
 }
-
+.search1{
+	width: 240px;
+	height: 46px;
+	border: 1px solid #e0e0e0;
+}
 .danpin{
 	width: 1226px;
 	height: 398px;
@@ -852,13 +862,15 @@
 }
 .sousuo{	
 	width: 52px;
-	height: 50px;
-	border-left: 1px solid #e0e0e0;
+	height: 48px;
+	border: 1px solid #e0e0e0;
+	border-left: 0;
 	font-family: 'iconfont';
 	font-size: 20px;
 	text-align: center;
 	line-height: 50px;
 	float: right;
+	background-color: #fff;
 }
 .search_wenzi{
 	float: left;
@@ -1095,4 +1107,9 @@ li{
 }
 .shipin_bofang img{
 	cursor: pointer;
+}
+.yingjian_bl:hover,.yingjian_item:hover,.dapei_t:hover,.dapei_item:hover,.reping_item:hover,.neirong_item:hover,.shipin_item:hover{
+	box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.1);
+	transform:translateY(-5px);
+	transition:all 1s ease-out;
 }
