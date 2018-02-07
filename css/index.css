@@ -19,7 +19,7 @@
 .head_wenzi{
 	color: #b0b0b0;
 	line-height: 40px;
-	size: 12px;
+	font-size: 12px;
 	float: left;
 }
 .head_line{
@@ -484,6 +484,7 @@
 	background-color: #fff;
 	float: left;
 	border-top: 1px solid #ffac13;
+	position: relative;
 }
 .neirong_item h2{
 	text-align: center;
@@ -596,7 +597,7 @@
 .shipin_item img{
 	width: 296px;
 	height: 180px;
-	margin-bottom: 33px;
+	/* margin-bottom: 33px; */
 }
 .play{
 	position: absolute;
@@ -622,7 +623,7 @@
     font-weight: 400;
     text-align: center;
     color: #333;
-    margin: 0 0 6px;
+    margin: 33px 0 6px;
     display:block;
     text-align: center;
 }
@@ -1108,8 +1109,47 @@ li{
 .shipin_bofang img{
 	cursor: pointer;
 }
-.yingjian_bl:hover,.yingjian_item:hover,.dapei_t:hover,.dapei_item:hover,.reping_item:hover,.neirong_item:hover,.shipin_item:hover{
+.yingjian_bl:hover,.yingjian_item:hover,.dapei_t:hover,
+.dapei_item:hover,.reping_item:hover,.neirong_item:hover,
+.shipin_item:hover{
 	box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.1);
 	transform:translateY(-5px);
+	/* transition:all 1s ease-out; */
+}
+.yingjian_bl,.yingjian_item,.dapei_t,
+.dapei_item,.reping_item,.neirong_item,
+.shipin_item{
 	transition:all 1s ease-out;
+}
+.row img:hover{    
+	box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.neirong_lbtn{
+	position:absolute;
+	top:0 ;
+	left: 0;
+	width: 20px;
+    height: 24px;
+    padding: 12px 0;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: rgba(66,66,66,0.2);
+    color: #fff;
+    opacity: 0;
+}
+.neirong_rbtn{
+	position:absolute;
+	top:0 ;
+	right: 0;
+	width: 20px;
+    height: 24px;
+    padding: 12px 0;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: rgba(66,66,66,0.2);
+    color: #fff;
+    opacity: 0;
+}
+.neirong_item:hover .neirong_lbtn,.neirong_item:hover .neirong_rbtn{
+	opacity: 1;
 }
