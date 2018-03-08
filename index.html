@@ -96,10 +96,13 @@
 
 	<!-- banner开始 -->
 	<div id="banner">
-		<div class="banner_img">
-			<img src="img/banner1.jpg" alt="">
-			<img src="img/banner2.jpg" alt="">
-		</div>
+		<ul class="banner_img">
+			<li class="active"><img src="img/1.jpg" alt=""></li>
+			<li><img src="img/2.jpg" alt=""></li>
+			<li><img src="img/3.jpg" alt=""></li>
+			<li><img src="img/4.jpg" alt=""></li>
+			<li><img src="img/5.jpg" alt=""></li>
+		</ul>
 		<ul class="banner_nav">
 			<li>
 				<span class="banner_title">手机 电话卡</span>
@@ -151,8 +154,10 @@
 				<span class="banner_jiantou">&gt;</span>
 			</li>
 		</ul>
-		<div class="banner_btn banner_lbtn">&lt;</div>
-		<div class="banner_btn banner_rbtn">&gt;</div>
+		<!-- <div class="banner_btn banner_lbtn">&lt;</div>
+		<div class="banner_btn banner_rbtn">&gt;</div> -->
+		<div class="prev"></div>
+		<div class="next"></div>
 		<div class="banner_dian">
 			<div class="banner_dian1 banner_dian2"></div>
 			<div class="banner_dian1"></div>
@@ -207,45 +212,116 @@
 		<div class="danpin_top">
 			<h1>小米明星单品</h1>
 			<div class="danpin_btn">
-				<div class="danpin_btn1">&lt;</div>
-				<div>&gt;</div>
+				<div class="buy_prev disable">&lt;</div>
+				<div class="buy_next">&gt;</div>
 			</div>
-
 		</div>
 		<div class="danpin_bottom">
-			<div class="danpin_item">
-				<img src="img/xmad_15117763019255_STRfj.png" alt="">
-				<h1>小米MIX2</h1>
-				<h2>全面屏2.0，5.99"大屏</h2>
-				<h3>3299元起</h3>
-			</div>	
+			<div class="danpin_inner">
+				<div class="danpin_item">
+					<img src="img/xmad_15117763019255_STRfj.png" alt="">
+					<h1>小米MIX2</h1>
+					<h2>全面屏2.0，5.99"大屏</h2>
+					<h3>3299元起</h3>
+				</div>	
 
-			<div class="danpin_item danpin_item4">
-				<img src="img/6ef55907-bbed-49be-a2bb-be0821b5f7b8.png" alt="">
-				<h1>小米手环2</h1>
-				<h2>OLED显示屏幕，升级记步算法</h2>
-				<h3>149元</h3>
-			</div>
+				<div class="danpin_item danpin_item4">
+					<img src="img/6ef55907-bbed-49be-a2bb-be0821b5f7b8.png" alt="">
+					<h1>小米手环2</h1>
+					<h2>OLED显示屏幕，升级记步算法</h2>
+					<h3>149元</h3>
+				</div>
 
-			<div class="danpin_item danpin_item3">
-				<img src="img/pms_1503909150.67293503!220x220.png" alt="">
-				<h1>小米电视4A 43英寸 标准版</h1>
-				<h2>全高清HDR 四核高性能处理器</h2>
-				<h3>1999元</h3>
-			</div>
+				<div class="danpin_item danpin_item3">
+					<img src="img/pms_1503909150.67293503!220x220.png" alt="">
+					<h1>小米电视4A 43英寸 标准版</h1>
+					<h2>全高清HDR 四核高性能处理器</h2>
+					<h3>1999元</h3>
+				</div>
 
-			<div class="danpin_item danpin_item2">
-				<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="">
-				<h1>米家扫地机器人</h1>
-				<h2>智能路径规则，扫得干净扫得快</h2>
-				<h3>1699元</h3>
-			</div>
+				<div class="danpin_item danpin_item2">
+					<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="">
+					<h1>米家扫地机器人</h1>
+					<h2>智能路径规则，扫得干净扫得快</h2>
+					<h3>1699元</h3>
+				</div>
 
-			<div class="danpin_item danpin_item1">
-				<img src="img/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png" alt="">
-				<h1>小米路由器3</h1>
-				<h2>更快更强，不止四天线</h2>
-				<h3>149元</h3>
+				<div class="danpin_item danpin_item1">
+					<img src="img/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png" alt="">
+					<h1>小米路由器3</h1>
+					<h2>更快更强，不止四天线</h2>
+					<h3>149元</h3>
+				</div>
+
+				<div class="danpin_item">
+					<img src="img/xmad_15117763019255_STRfj.png" alt="">
+					<h1>小米MIX2</h1>
+					<h2>全面屏2.0，5.99"大屏</h2>
+					<h3>3299元起</h3>
+				</div>	
+
+				<div class="danpin_item danpin_item4">
+					<img src="img/6ef55907-bbed-49be-a2bb-be0821b5f7b8.png" alt="">
+					<h1>小米手环2</h1>
+					<h2>OLED显示屏幕，升级记步算法</h2>
+					<h3>149元</h3>
+				</div>
+
+				<div class="danpin_item danpin_item3">
+					<img src="img/pms_1503909150.67293503!220x220.png" alt="">
+					<h1>小米电视4A 43英寸 标准版</h1>
+					<h2>全高清HDR 四核高性能处理器</h2>
+					<h3>1999元</h3>
+				</div>
+
+				<div class="danpin_item danpin_item2">
+					<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="">
+					<h1>米家扫地机器人</h1>
+					<h2>智能路径规则，扫得干净扫得快</h2>
+					<h3>1699元</h3>
+				</div>
+
+				<div class="danpin_item danpin_item1">
+					<img src="img/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png" alt="">
+					<h1>小米路由器3</h1>
+					<h2>更快更强，不止四天线</h2>
+					<h3>149元</h3>
+				</div>
+
+				<div class="danpin_item">
+					<img src="img/xmad_15117763019255_STRfj.png" alt="">
+					<h1>小米MIX2</h1>
+					<h2>全面屏2.0，5.99"大屏</h2>
+					<h3>3299元起</h3>
+				</div>	
+
+				<div class="danpin_item danpin_item4">
+					<img src="img/6ef55907-bbed-49be-a2bb-be0821b5f7b8.png" alt="">
+					<h1>小米手环2</h1>
+					<h2>OLED显示屏幕，升级记步算法</h2>
+					<h3>149元</h3>
+				</div>
+
+				<div class="danpin_item danpin_item3">
+					<img src="img/pms_1503909150.67293503!220x220.png" alt="">
+					<h1>小米电视4A 43英寸 标准版</h1>
+					<h2>全高清HDR 四核高性能处理器</h2>
+					<h3>1999元</h3>
+				</div>
+
+				<div class="danpin_item danpin_item2">
+					<img src="img/848def18-47d9-4ca0-8822-c2ac61b83779.png" alt="">
+					<h1>米家扫地机器人</h1>
+					<h2>智能路径规则，扫得干净扫得快</h2>
+					<h3>1699元</h3>
+				</div>
+
+				<div class="danpin_item danpin_item1">
+					<img src="img/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png" alt="">
+					<h1>小米路由器3</h1>
+					<h2>更快更强，不止四天线</h2>
+					<h3>149元</h3>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -270,7 +346,7 @@
 					<!-- <div class="flag">
 							<h1>新品</h1>
 						</div> -->
-						<img src="img/pms_1498624482.88089389!220x220.jpg" alt="">
+						<img src="img/yj1.jpg" alt="">
 						<a href="">米家激光投影电视</a>
 						<p>150英寸超大投影尺寸</p>
 						<h1>9999元</h1>
@@ -278,7 +354,7 @@
 					</div>
 
 					<div class="yingjian_item">
-						<img src="img/pms_1498643144.48446520!220x220.png" alt="">
+						<img src="img/yj2.png" alt="">
 						<a href="">九号平衡车Plus</a>
 						<p>35km超长续航，一键自动跟随</p>
 						<h1>3499元</h1>
@@ -287,7 +363,7 @@
 
 
 					<div class="yingjian_item">
-						<img src="img/pms_1464615180.86261317!220x220.jpg" alt="">
+						<img src="img/yj3.jpg" alt="">
 						<a href="">米兔智能故事机</a>
 						<p>微信远程互动，智能语音交互</p>
 						<h1>179元</h1>
@@ -296,7 +372,7 @@
 
 
 					<div class="yingjian_item">
-						<img src="img/pms_1465366178.11466342!220x220.jpg" alt="">
+						<img src="img/yj4.jpg" alt="">
 						<a href="">米家恒温电水壶</a>
 						<p>水温智能控制，304不锈钢内胆</p>
 						<h1>179元</h1>
@@ -305,7 +381,7 @@
 
 
 					<div class="yingjian_item  yingjian_item1">
-						<img src="img/pms_1506733860.3164711!220x220.jpg" alt="">
+						<img src="img/yj5.jpg" alt="">
 						<a href="">车载空气净化器（USB车充版）</a>
 						<p>高效净化车内空气</p>
 						<h1>389元</h1>
@@ -314,7 +390,7 @@
 
 
 					<div class="yingjian_item yingjian_item1">
-						<img src="img/pms_1488338229.6467773!220x220.jpg" alt="">
+						<img src="img/yj6.jpg" alt="">
 						<a href="">米家行车记录仪</a>
 						<p>晚上能拍清车牌的行车记录仪</p>
 						<h1>349元</h1>
@@ -323,7 +399,7 @@
 
 
 					<div class="yingjian_item yingjian_item1">
-						<img src="img/T1HQA_BCd_1RXrhCrK!220x220.jpg" alt="">
+						<img src="img/yj7.jpg" alt="">
 						<a href="">米家iHealth血压计</a>
 						<p>爸妈上手就会用的智能血压计</p>
 						<h1>379元</h1>
@@ -332,7 +408,7 @@
 
 
 					<div class="yingjian_item yingjian_item1">
-						<img src="img/pms_1488272686.62666302!220x220.jpg" alt="">
+						<img src="img/yj8.jpg" alt="">
 						<a href="">小米米家电动滑板车</a>
 						<p>极简几何设计，1分钟轻松上手</p>
 						<h1>1999元</h1>
@@ -348,74 +424,255 @@
 			<div class="dapei_top">
 				<h1>搭配</h1>
 				<div class="dapei_wenzi" >
-					<h2 class="dapei_wenzi1">热门</h2>
-					<h2>耳机音响</h2>
-					<h2>电源</h2>
-					<h2>电池存储卡</h2>
+					<h2 class="type dapei_wenzi1">热门</h2>
+					<h2 class="type">耳机音响</h2>
+					<h2 class="type">电源</h2>
+					<h2 class="type">电池存储卡</h2>
 				</div>
 			</div>
 			<div class="dapei_bottom">
-				<img  class="dapei_t" src="img/xmad_15094387477095_BAdZH.jpg" alt="">
-
-				<div class="dapei_item">
-					<img src="img/pms_1513857241.9291821.jpg" alt="">
-					<div class="dapei_zhekou">享9折</div>
-					<a href="">九号平衡车Plus</a>
-					<h1>3499元</h1>
-					<p>3021人评论</p>				
+				<div class="dapei_left">
+					<img  class="dapei_t" src="img/xmad_15094387477095_BAdZH.jpg" alt="">
+					<img  class="dapei_t dapei_item1" src="img/afd3f68d-13d8-4177-8c6f-da56fc45abaf.jpg" alt="">
 				</div>
+				<div class="dapei_right">
+					<div class="dapei_list active">
+						<div class="dapei_item">
+						<img src="img/dp1.jpg" alt="">
+						<div class="dapei_zhekou">享9折</div>
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
 
-				<div class="dapei_item">
-					<img src="img/pms_1516600938.82135130.jpg" alt="">
-					<div class="dapei_zhekou dapei_zhekou1">新品</div>
-					<a href="">九号平衡车Plus</a>
-					<h1>3499元</h1>
-					<p>3021人评论</p>				
-				</div>
+						<div class="dapei_item">
+						<img src="img/dp2.jpg" alt="">
+						<div class="dapei_zhekou dapei_zhekou1">新品</div>
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
 
-				<div class="dapei_item">
-					<img src="img/pms_1505264799.43246303.jpg" alt="">
-					<a href="">九号平衡车Plus</a>
-					<h1>3499元</h1>
-					<p>3021人评论</p>				
-				</div>
+						<div class="dapei_item">
+						<img src="img/dp3.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
 
-				<div class="dapei_item">
-					<img src="img/pms_1481269289.59498154.jpg" alt="">
-					<a href="">九号平衡车Plus</a>
-					<h1>3499元</h1>
-					<p>3021人评论</p>				
-				</div>
+						<div class="dapei_item">
+						<img src="img/dp4.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
 
-				<img  class="dapei_t dapei_item1" src="img/afd3f68d-13d8-4177-8c6f-da56fc45abaf.jpg" alt="">
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp5.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
 
-				<div class="dapei_item dapei_item1">
-					<img src="img/pms_1516347548.50716959.jpg" alt="">
-					<a href="">九号平衡车Plus</a>
-					<h1>3499元</h1>
-					<p>3021人评论</p>				
-				</div>
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp6.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
 
-				<div class="dapei_item dapei_item1">
-					<img src="img/pms_1482321199.12589253.jpg" alt="">
-					<a href="">九号平衡车Plus</a>
-					<h1>3499元</h1>
-					<p>3021人评论</p>				
-				</div>
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp7.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
 
-				<div class="dapei_item dapei_item1">
-					<img src="img/pms_1515404353.30516645.jpg" alt="">
-					<a href="">九号平衡车Plus</a>
-					<h1>3499元</h1>
-					<p>3021人评论</p>				
-				</div>
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp8.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+					</div>
+					<div class="dapei_list">
+						<div class="dapei_item">
+						<img src="img/dp8.jpg" alt="">
+						<div class="dapei_zhekou dapei_zhekou1">新品</div>
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
 
-				<div class="dapei_item dapei_item1">
-					<img src="img/pms_1478163840.49069197!220x220.jpg" alt="">
-					<a href="">九号平衡车Plus</a>
-					<h1>3499元</h1>
-					<p>3021人评论</p>				
-				</div>
+						<div class="dapei_item">
+						<img src="img/dp7.jpg" alt="">
+						<div class="dapei_zhekou">享9折</div>
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item">
+						<img src="img/dp6.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item">
+						<img src="img/dp5.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp4.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp3.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp2.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp1.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+					</div>
+					<div class="dapei_list">
+						<div class="dapei_item">
+						<img src="img/dp5.jpg" alt="">
+						<div class="dapei_zhekou">享9折</div>
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item">
+						<img src="img/dp6.jpg" alt="">
+						<div class="dapei_zhekou dapei_zhekou1">新品</div>
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item">
+						<img src="img/dp7.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item">
+						<img src="img/dp8.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp1.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp2.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp3.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp4.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+					</div>
+					<div class="dapei_list">
+						<div class="dapei_item">
+						<img src="img/dp4.jpg" alt="">
+						<div class="dapei_zhekou dapei_zhekou1">新品</div>
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item">
+						<img src="img/dp3.jpg" alt="">
+						<div class="dapei_zhekou">享9折</div>
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item">
+						<img src="img/dp2.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item">
+						<img src="img/dp1.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp8.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp7.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp6.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+
+						<div class="dapei_item dapei_item1">
+						<img src="img/dp5.jpg" alt="">
+						<a href="">九号平衡车Plus</a>
+						<h1>3499元</h1>
+						<p>3021人评论</p>				
+						</div>
+					</div>
+				</div>	
 			</div>
 		</section>
 		<!-- 搭配结束 -->
@@ -425,72 +682,247 @@
 			<div class="dapei_top">
 				<h1>配件</h1>
 				<div class="dapei_wenzi" >
-					<h2 class="dapei_wenzi1">热门</h2>
-					<h2>保护套</h2>
-					<h2>贴纸</h2>
-					<h2>其他配件</h2>
+					<h2 class="type dapei_wenzi1">热门</h2>
+					<h2 class="type">保护套</h2>
+					<h2 class="type">贴纸</h2>
+					<h2 class="type">其他配件</h2>
 				</div>
 			</div>
 			<div class="dapei_bottom">
-				<img  class="dapei_t" src="img/xmad_15053023729301_vkfBo.jpg" alt="">
-
-				<div class="dapei_item">
-						<img src="img/p1.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>1.4万人评论</p>					
+				<div class="dapei_left">
+					<img  class="dapei_t" src="img/xmad_15053023729301_vkfBo.jpg" alt="">
+					<img  class="dapei_t dapei_item1" src="img/a7ed42d1-1a3e-4956-81f1-3fb215d248a8.jpg" alt="">
 				</div>
+				<div class="dapei_right">
+					<div class="dapei_list active">
+						<div class="dapei_item">
+							<img src="img/p1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
 
-				<div class="dapei_item">
-						<img src="img/p2.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>1.4万人评论</p>					
-				</div>
+						<div class="dapei_item">
+							<img src="img/p2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
 
-				<div class="dapei_item">
-						<img src="img/p3.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>1.4万人评论</p>					
-				</div>
+						<div class="dapei_item">
+							<img src="img/p3.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
 
-				<div class="dapei_item">
-						<img src="img/p4.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>1.4万人评论</p>					
-				</div>
+						<div class="dapei_item">
+							<img src="img/p4.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
 
-				<img  class="dapei_t dapei_item1" src="img/a7ed42d1-1a3e-4956-81f1-3fb215d248a8.jpg" alt="">
+						<div class="dapei_item dapei_item1">
+							<img src="img/p5.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
 
-				<div class="dapei_item dapei_item1">
-						<img src="img/p5.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>1.4万人评论</p>					
-				</div>
+						<div class="dapei_item dapei_item1">
+							<img src="img/p6.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
 
-				<div class="dapei_item dapei_item1">
-						<img src="img/p6.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>1.4万人评论</p>					
-				</div>
+						<div class="dapei_item dapei_item1">
+							<img src="img/p7.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
 
-				<div class="dapei_item dapei_item1">
-						<img src="img/p7.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>1.4万人评论</p>					
-				</div>
+						<div class="dapei_item dapei_item1">
+							<img src="img/p8.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+					</div>
+					<div class="dapei_list">
+						<div class="dapei_item">
+							<img src="img/p8.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
 
-				<div class="dapei_item dapei_item1">
-						<img src="img/p8.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>1.4万人评论</p>					
-				</div>
+						<div class="dapei_item">
+							<img src="img/p7.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/p6.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/p5.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p4.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p3.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+					</div>
+					<div class="dapei_list">
+						<div class="dapei_item">
+							<img src="img/p5.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/p6.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/p7.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/p8.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p3.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p4.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+					</div>
+					<div class="dapei_list">
+						<div class="dapei_item">
+							<img src="img/p4.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/p3.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/p2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/p1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p5.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p6.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p7.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p8.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>1.4万人评论</p>					
+						</div>	
+					</div>
+				</div>		
 			</div>
 		</section>
 		<!-- 配件结束 -->
@@ -500,122 +932,425 @@
 			<div class="dapei_top">
 				<h1>周边</h1>
 				<div class="dapei_wenzi" >
-					<h2 class="dapei_wenzi1">热门</h2>
-					<h2>服装</h2>
-					<h2>米兔</h2>
-					<h2>生活周边</h2>
-					<h2>箱包</h2>
+					<h2 class="type dapei_wenzi1">热门</h2>
+					<h2 class="type">服装</h2>
+					<h2 class="type">米兔</h2>
+					<h2 class="type">生活周边</h2>
+					<h2 class="type">箱包</h2>
 				</div>
 			</div>
 			<div class="dapei_bottom">
-				<img  class="dapei_t" src="img/xmad_15162458631619_LTmcI.jpg" alt="">
-
-				<div class="dapei_item">
-						<img src="img/z1.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>8001人评论</p>					
+				<div class="dapei_left">
+					<img  class="dapei_t" src="img/xmad_15162458631619_LTmcI.jpg" alt="">
+					<img  class="dapei_t dapei_item1" src="img/xmad_15094387477095_BAdZH.jpg" alt="">
 				</div>
+				<div class="dapei_right">
+					<div class="dapei_list active">
+						<div class="dapei_item">
+							<img src="img/z1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
 
-				<div class="dapei_item">
-						<img src="img/z1.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>8001人评论</p>					
-				</div>
+						<div class="dapei_item">
+							<img src="img/z1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
 
-				<div class="dapei_item">
-						<img src="img/z1.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>8001人评论</p>					
-				</div>
+						<div class="dapei_item">
+							<img src="img/z1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
 
-				<div class="dapei_item">
-						<img src="img/z1.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>8001人评论</p>					
-				</div>
+						<div class="dapei_item">
+							<img src="img/z1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
 
-				<img  class="dapei_t dapei_item1" src="img/xmad_15094387477095_BAdZH.jpg" alt="">
+						<div class="dapei_item dapei_item1">
+							<img src="img/z2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
 
-				<div class="dapei_item dapei_item1">
-						<img src="img/z2.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>8001人评论</p>					
-				</div>
+						<div class="dapei_item dapei_item1">
+							<img src="img/z2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
 
-				<div class="dapei_item dapei_item1">
-						<img src="img/z2.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>8001人评论</p>					
-				</div>
+						<div class="dapei_item dapei_item1">
+							<img src="img/z2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
 
-				<div class="dapei_item dapei_item1">
-						<img src="img/z2.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>8001人评论</p>					
-				</div>
+						<div class="dapei_item dapei_item1">
+							<img src="img/z2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+					</div>
+					<div class="dapei_list">
+						<div class="dapei_item">
+							<img src="img/p4.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
 
-				<div class="dapei_item dapei_item1">
-						<img src="img/z2.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>8001人评论</p>					
-				</div>
+						<div class="dapei_item">
+							<img src="img/p4.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/p4.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/p4.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/yj4.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/yj4.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/yj4.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/yj4.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+					</div>
+					<div class="dapei_list">
+						<div class="dapei_item">
+							<img src="img/yj8.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/yj8.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/yj8.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/yj8.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/p1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+					</div>
+					<div class="dapei_list">
+						<div class="dapei_item">
+							<img src="img/z2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/z2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/z2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/z2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/z1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/z1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/z1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/z1.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+					</div>
+					<div class="dapei_list">
+						<div class="dapei_item">
+							<img src="img/dp2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/dp2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/dp2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item">
+							<img src="img/dp2.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/dp6.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/dp6.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/dp6.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+
+						<div class="dapei_item dapei_item1">
+							<img src="img/dp6.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>8001人评论</p>					
+						</div>
+					</div>
+				</div>			
 			</div>
 		</section>
 		<!-- 周边结束 -->
 
 		<!-- 为你推荐开始 -->
-		<section class="tuijian">
+		<section class="danpin tuijian">
 			<div class="dapei_top">
 				<h1>为你推荐</h1>
 				<div class="danpin_btn">
-					<div>&lt;</div>
-					<div class="tuijian_btn">&gt;</div>
+					<div class="buy_prev disable">&lt;</div>
+				<div class="buy_next">&gt;</div>
 				</div>	
-			</div>			
-			<div class="tuijian_bottom">				
+			</div>
+			<div class="bottom tuijian_bottom">		
+				<div class="danpin_inner">			
+					<div class="dapei_item tuijian_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
 
-				<div class="dapei_item tuijian_item">
-						<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>2274人好评</p>					
+					<div class="dapei_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
+
+					<div class="dapei_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
+
+					<div class="dapei_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
+
+					<div class="dapei_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
+
+					<div class="dapei_item tuijian_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
+
+					<div class="dapei_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
+
+					<div class="dapei_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
+
+					<div class="dapei_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
+
+					<div class="dapei_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>	
+
+					<div class="dapei_item tuijian_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
+
+					<div class="dapei_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
+
+					<div class="dapei_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
+
+					<div class="dapei_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>
+
+					<div class="dapei_item">
+							<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
+							<a href="">九号平衡车Plus</a>
+							<h1>3499元</h1>
+							<p>2274人好评</p>					
+					</div>					
 				</div>
-
-				<div class="dapei_item">
-						<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>2274人好评</p>					
-				</div>
-
-				<div class="dapei_item">
-						<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>2274人好评</p>					
-				</div>
-
-				<div class="dapei_item">
-						<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>2274人好评</p>					
-				</div>
-
-				<div class="dapei_item">
-						<img src="img/pms_1512614341.55839407!140x140.jpg" alt="">
-						<a href="">九号平衡车Plus</a>
-						<h1>3499元</h1>
-						<p>2274人好评</p>					
-				</div>				
 			</div>
 		</section>
 		<!-- 为你推荐结束 -->
@@ -691,17 +1426,37 @@
 			<div class="dapei_top">
 				<h1>内容</h1>
 			</div>
-			<div class="neirong_bottom">				
+			<div class="neirong_bottom">		
 				<div class="neirong_item">
 					<h2>图片</h2>
-					<a href="" class="neirong_title">哈利·波特与被诅咒的孩子</a>
-					<div class="neirong_content">
-						<a href="">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </a>
-					</div>				
-					<a href="" class="neirong_price">29.37元</a>
-					<img src="img/5e5da924-84e3-4959-9e25-5891cdf30757.png" alt="">
+					<div class="neirong_list ">
+						<div class="neirong_list1 active">
+							<a href="" class="neirong_title">哈利·波特与被诅咒的孩子</a>
+							<div class="neirong_content">
+								<a href="">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </a>
+							</div>				
+							<a href="" class="neirong_price">29.37元</a>
+							<img src="img/n4.png" alt="">
+						</div>
+						<div class="neirong_list1">
+							<a href="" class="neirong_title">米奇-有你有我</a>
+							<div class="neirong_content">
+								<a href="">米奇来啦！小米主题和迪士尼首度合作，打造精品迪士尼系列主题 </a>
+							</div>				
+							<a href="" class="neirong_price">29.37元</a>
+							<img src="img/n3.png" alt="">
+						</div>
+						<div class="neirong_list1">
+							<a href="" class="neirong_title">剑侠世界2</a>
+							<div class="neirong_content">
+								<a href="">潮流武侠，炫动江湖！ </a>
+							</div>				
+							<a href="" class="neirong_price">29.37元</a>
+							<img src="img/n2.png" alt="">
+						</div>
+					</div>
 					<div class="neirong_xuanze">
-						<div class="circle"></div>
+						<div class="circle1 circle"></div>
 						<div class="circle1"></div>
 						<div class="circle1"></div>
 					</div>	
@@ -711,14 +1466,39 @@
 
 				<div class="neirong_item neirong_item3">
 					<h2>图片</h2>
-					<a href="" class="neirong_title">哈利·波特与被诅咒的孩子</a>
-					<div class="neirong_content">
-						<a href="">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </a>
-					</div>				
-					<a href="" class="neirong_price">29.37元</a>
-					<img src="img/n1.png" alt="">
+					<div class="neirong_list ">
+						<div class="neirong_list1 active">
+							<a href="" class="neirong_title">哈利·波特与被诅咒的孩子</a>
+							<div class="neirong_content">
+								<a href="">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </a>
+							</div>				
+							<a href="" class="neirong_price">29.37元</a>
+							<img src="img/n1.png" alt="">
+						</div>
+						<div class="neirong_list1">
+							<a href="" class="neirong_title">米奇-有你有我</a>
+							<div class="neirong_content">
+								<a href="">米奇来啦！小米主题和迪士尼首度合作，打造精品迪士尼系列主题 </a>
+							</div>				
+							<a href="" class="neirong_price">29.37元</a>
+							<img src="img/n3.png" alt="">
+						</div>
+						<div class="neirong_list1">
+							<a href="" class="neirong_title">剑侠世界2</a>
+							<div class="neirong_content">
+								<a href="">潮流武侠，炫动江湖！ </a>
+							</div>				
+							<a href="" class="neirong_price">29.37元</a>
+							<img src="img/n2.png" alt="">
+						</div>
+					</div>
+
+
+
+
+					
 					<div class="neirong_xuanze">
-						<div class="circle"></div>
+						<div class="circle1 circle"></div>
 						<div class="circle1"></div>
 						<div class="circle1"></div>
 					</div>
@@ -728,14 +1508,40 @@
 
 				<div class="neirong_item neirong_item4">
 					<h2>图片</h2>
-					<a href="" class="neirong_title">哈利·波特与被诅咒的孩子</a>
-					<div class="neirong_content">
-						<a href="">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </a>
-					</div>				
-					<a href="" class="neirong_price">29.37元</a>
-					<img src="img/n2.png" alt="">
+					<div class="neirong_list ">
+						<div class="neirong_list1 active">
+							<a href="" class="neirong_title">哈利·波特与被诅咒的孩子</a>
+							<div class="neirong_content">
+								<a href="">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </a>
+							</div>				
+							<a href="" class="neirong_price">29.37元</a>
+							<img src="img/n2.png" alt="">
+						</div>
+						<div class="neirong_list1">
+							<a href="" class="neirong_title">米奇-有你有我</a>
+							<div class="neirong_content">
+								<a href="">米奇来啦！小米主题和迪士尼首度合作，打造精品迪士尼系列主题 </a>
+							</div>				
+							<a href="" class="neirong_price">29.37元</a>
+							<img src="img/n3.png" alt="">
+						</div>
+						<div class="neirong_list1">
+							<a href="" class="neirong_title">剑侠世界2</a>
+							<div class="neirong_content">
+								<a href="">潮流武侠，炫动江湖！ </a>
+							</div>				
+							<a href="" class="neirong_price">29.37元</a>
+							<img src="img/n2.png" alt="">
+						</div>
+					</div>
+
+
+
+
+
+					
 					<div class="neirong_xuanze">
-						<div class="circle"></div>
+						<div class="circle1 circle"></div>
 						<div class="circle1"></div>
 						<div class="circle1"></div>
 					</div>	
@@ -745,14 +1551,38 @@
 
 				<div class="neirong_item neirong_item1">
 					<h2>图片</h2>
-					<a href="" class="neirong_title">哈利·波特与被诅咒的孩子</a>
-					<div class="neirong_content">
-						<a href="">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </a>
-					</div>				
-					<a href="" class="neirong_price">29.37元</a>
-					<img src="img/n3.png" alt="">
+					<div class="neirong_list ">
+						<div class="neirong_list1 active">
+							<a href="" class="neirong_title">哈利·波特与被诅咒的孩子</a>
+							<div class="neirong_content">
+								<a href="">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </a>
+							</div>				
+							<a href="" class="neirong_price">29.37元</a>
+							<img src="img/n3.png" alt="">
+						</div>
+						<div class="neirong_list1">
+							<a href="" class="neirong_title">米奇-有你有我</a>
+							<div class="neirong_content">
+								<a href="">米奇来啦！小米主题和迪士尼首度合作，打造精品迪士尼系列主题 </a>
+							</div>				
+							<a href="" class="neirong_price">29.37元</a>
+							<img src="img/n3.png" alt="">
+						</div>
+						<div class="neirong_list1">
+							<a href="" class="neirong_title">剑侠世界2</a>
+							<div class="neirong_content">
+								<a href="">潮流武侠，炫动江湖！ </a>
+							</div>				
+							<a href="" class="neirong_price">29.37元</a>
+							<img src="img/n2.png" alt="">
+						</div>
+					</div>
+
+
+
+					
 					<div class="neirong_xuanze">
-						<div class="circle"></div>
+						<div class="circle1 circle"></div>
 						<div class="circle1"></div>
 						<div class="circle1"></div>
 					</div>	
@@ -979,4 +1809,5 @@
 	</div>
 	<!-- 版权结束 -->
 </body>
+<script src="js/index.js"></script>
 </html>
