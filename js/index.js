@@ -107,61 +107,77 @@
 }
 //内容、图片效果
 {
-
 	function tupian(parent){
+		let next=parent.querySelector(".neirong_rbtn");
+		let prev=parent.querySelector(".neirong_lbtn");
+		let inner=parent.querySelector(".neirong_inner");
+		let items=parent.querySelectorAll(".neirong_list1");
 		let circle=parent.querySelectorAll(".circle1");
-		let list=parent.querySelectorAll(".neirong_list1");
-		const next=parent.querySelector(".neirong_rbtn");
-		const prev=parent.querySelector(".neirong_lbtn");
-		circle.forEach(function(ele,index){
-			ele.onclick=function(){
-				for(let i=0;i<circle.length;i++){
-					circle[i].classList.remove("circle");
-					list[i].classList.remove("active");
-				}
-				this.classList.add("circle");
-				list[index].classList.add("active");
-				n=index;
-			}
-			
-		});
-		function move(){
-			for (let i = 0; i <circle.length; i++) {
-				circle[i].classList.remove("circle");
-				list[i].classList.remove("active");
-			}
-			circle[n].classList.add("circle");
-			list[n].classList.add("active");
-		}
 		let n=0;
-		next.onclick=function(){
+		let obj=circle[0];
+		const l=circle.length;
+		next.onclick=function( ){
 			n++;
-			prev.classList.remove("disable");
-			if (n===2) {
-				this.classList.add("disable");
-			}
-			if (n===3) {
-				n=2;
+			if(n===l){
+				n=l-1;
 				return;
 			}
-			move();
+			inner.style.marginLeft=-n*296+"px";
+			circle[n-1].classList.remove("circle");
+			circle[n].classList.add("circle");
+			obj=circle[n];
 		}
-		prev.onclick=function(){
+		prev.onclick=function( ){
 			n--;
-			next.classList.remove("disable");
-			if(n===0){
-				this.classList.add("disable");
-			}
-			if (n===-1) {
+			if(n===-1){
 				n=0;
 				return;
 			}
-			move();
-		}
+			inner.style.marginLeft=-n*300+"px";
+			circle[n+1].classList.remove("circle");
+			circle[n].classList.add("circle");
+			obj=circle[n];
+		}	
+		circle.forEach(function(ele,index){
+			ele.onclick=function(){
+				obj.classList.remove("circle");
+				ele.classList.add("circle");
+				obj=ele;
+				inner.style.marginLeft=-index*296+"px";
+				n=index;
+			}	
+		})
 	}
 	const contentlist=document.querySelectorAll(".neirong_item");
-	tupian(contentlist[0]);
 	contentlist.forEach(function(ele){
 		tupian(ele);
 	});
+}
+//banner侧边框
+{
+	let labels=document.querySelectorAll(".banner_nav li");
+	let menus=document.querySelectorAll(".banner_menu");
+	let obj=menus[0]
+	labels.forEach(function(ele,index){
+		ele.onmouseover=function(){
+			obj.style.display="none";
+			menus[index].style.display="block";
+			obj=menus[index];
+		}
+		ele.onmouseleave=function(){
+			menus[index].style.display="none";
+		}
+	})
+}
+//导航
+{
+	let box=document.querySelector(".nav")
+	let top=document.querySelector(".nav_wenzi")
+	let bottom=document.querySelector(".nav_bottom")
+	top.onmouseover=function(){
+		bottom.style.height="229px"
+	}
+	box.onmouseleave=function(){
+		bottom.style.height="0"
+	}
 }
