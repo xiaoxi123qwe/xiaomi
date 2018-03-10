@@ -42,8 +42,27 @@
 	float: left;
 	margin-left: 25px;
 	text-align: center;
+	position: relative;
 }
-
+.buy_menu{
+	/* display: none; */
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	width: 316px;
+	height: 0;
+    padding: 15px 0 0;
+    color: #424242;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    z-index: 1;
+    transition: all .4s;
+}
+.buy_content{
+	text-align: center;
+	font-size: 12px;
+	padding: 20px 0;
+}
 .nav{
 	width: 1226px;
 	height: 100px;
@@ -274,7 +293,7 @@
 .yingjian_item{
 	width: 234px;
 	height: 266px;
-	background-color: #fafafa;
+	background-color: #fff;
 	float: left;
 	margin-left: 14px;
 	padding-top: 34px;
@@ -391,7 +410,7 @@
 .dapei_item{
 	width: 234px;
 	height: 266px;
-	background-color: #fafafa;
+	background-color: #fff;
 	float: left;
 	margin-left: 14px;
 	padding-top: 34px;
@@ -553,6 +572,7 @@
 	width: 200px;
 	height: 40px;
 	margin: 0 auto;
+    overflow: hidden;
 }
 .neirong_content a{
 	text-align: center;
@@ -560,7 +580,6 @@
 	line-height: 20px;
     font-weight: 400;
     color: #b0b0b0;
-    display: block;
 }
 .neirong_price{
 	text-align: center;
@@ -618,10 +637,22 @@
 	color: #83c44e;
 }
 .neirong_item3{
-	border-top: 1px solid #e53935;
+	border-top: 1px solid #83c44e;
 }
 .neirong_item3 h2{
+	color: #83c44e;
+}
+.neirong_item4{
+	border-top: 1px solid #e53935;
+}
+.neirong_item4 h2{
 	color: #e53935;
+}
+.neirong_juli{
+	padding-top: 46px;
+}
+.neirong_xuanze1{
+	width: 120px;
 }
 .neirong_list{
 	width: 100%;
@@ -630,7 +661,7 @@
     overflow: hidden;
 }
 .neirong_inner{
-	width: 1000px;
+	width: 1200px;
 	height: 261px;
 }
 .neirong_list1{
@@ -734,6 +765,7 @@
 	height: 170px;
 	float: left;
 	margin-left: 14px;
+	cursor: pointer;
 }
 .row_item1{
 	width: 78px;
@@ -1071,6 +1103,9 @@ li{
 .head_buy:hover span{
 	color: #ff6700;
 }
+.head_buy:hover .buy_menu{
+	opacity: 1;
+}
 .nav_wenzi span:hover{
 	color: #ff6700;
 }
@@ -1274,4 +1309,56 @@ li{
 }
 .next:hover{
 	background-position: -42px 50%;
+}
+.neirong_qianwang:hover{
+    color: #fff;
+    background-color: #ff920f;
+    border-color: #ff920f;
+}
+.neirong_qianwang1:hover{
+    color: #fff;
+    background-color: #71b639;
+    border-color: #71b639;
+}
+.neirong_qianwang2:hover{
+    color: #fff;
+    background-color: #e42a27;
+    border-color: #e42a27;
+}
+.neirong_qianwang3:hover{
+    color: #fff;
+    background-color: #0c80dc;
+    border-color: #0c80dc;
+}
+.neirong_qianwang{
+    width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ffac13;
+    text-align: center;
+    cursor: pointer;
+    transition: all .4s;
+    background: #fff;
+    color: #ffac13;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.neirong_qianwang1{
+    border-color: #83c44e;
+    background: #fff;
+    color: #83c44e;
+}
+.neirong_qianwang2{
+    border-color: #e53935;
+    background: #fff;
+    color: #e53935;
+}
+.neirong_qianwang3{
+    border-color: #2196f3;
+    background: #fff;
+    color: #2196f3;
 }

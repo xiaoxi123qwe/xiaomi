@@ -181,3 +181,16 @@
 		bottom.style.height="0"
 	}
 }
+//购物车
+{
+	let buy=document.querySelector(".head_buy");
+	let menu=document.querySelector(".buy_menu");
+	buy.onmouseover=function(){
+		// menu.style.display="block";
+		menu.style.height="80px";
+	}
+	buy.onmouseleave=function(){
+		// menu.style.display="none";
+		menu.style.height="0";
+	}
+}
