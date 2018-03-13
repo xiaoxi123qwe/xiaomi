@@ -116,11 +116,12 @@
 	height: 110px;
 	margin: 0 auto;
 }
-.nav_menu span{
+.nav_top .nav_menu h3{
 	display: block;
 	line-height: 20px;
+	font-weight: 400;
 }
-.nav_menu p{
+.nav_top .nav_menu p{
 	margin: 0;
     line-height: 20px;
     color: #ff6700;
