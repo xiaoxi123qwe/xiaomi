@@ -39,13 +39,25 @@
 	banner.onmouseleave=function(){
 		t=setInterval(move,3000);
 	}
+	let flag=true;
 	next.onclick=function(){
-		move();
+		if (flag) {
+			flag=false;
+			move();
+		}
 	}
 	prev.onclick=function(){
-		n-=2;
-		move();
+		if (flag) {
+			flag=false;
+			n-=2;
+			move();
+		}
 	}
+	imgs.forEach(function(ele,index){
+		ele.addEventListener("transitionend", function(){
+			flag=true;
+		});
+	})
 }
 //闪购部分效果
 {
@@ -64,7 +76,7 @@
 				n=2;
 				return;
 			}
-			inner.style.marginLeft=-1226*n+"px";
+			inner.style.marginLeft=-1240*n+"px";
 		}
 		prev.onclick=function(){
 			n--;
@@ -76,7 +88,7 @@
 				n=0;
 				return;
 			}
-			inner.style.marginLeft=-1226*n+"px";
+			inner.style.marginLeft=-1240*n+"px";
 		}
 	}
 	const contentlist=document.querySelectorAll(".danpin");
@@ -155,7 +167,7 @@
 }
 //banner侧边框
 {
-	let labels=document.querySelectorAll(".banner_nav li");
+	let labels=document.querySelectorAll(".banner_nav .banner_label");
 	let menus=document.querySelectorAll(".banner_menu");
 	let obj=menus[0]
 	labels.forEach(function(ele,index){
@@ -171,26 +183,45 @@
 }
 //导航
 {
-	let box=document.querySelector(".nav")
-	let top=document.querySelector(".nav_wenzi")
-	let bottom=document.querySelector(".nav_bottom")
-	top.onmouseover=function(){
-		bottom.style.height="229px"
-	}
-	box.onmouseleave=function(){
-		bottom.style.height="0"
-	}
+	// let box=document.querySelector(".nav")
+	// let top=document.querySelector(".nav_wenzi")
+	// let bottom=document.querySelector(".nav_bottom")
+	// top.onmouseover=function(){
+	// 	bottom.style.height="229px";
+	// 	bottom.style.display="block";
+	// }
+	// box.onmouseleave=function(){
+	// 	bottom.style.height="0";
+	// 	bottom.style.display="none";
+	// }
+
+	let labels=document.querySelectorAll(".nav_wenzi span.active");
+	let menus=document.querySelectorAll(".nav_bottom");
+	let obj=menus[0]
+	labels.forEach(function(ele,index){
+		ele.onmouseover=function(){
+			obj.style.display="none";
+			menus[index].style.display="block";
+			menus[index].style.height="229px";
+			obj=menus[index];
+		}
+		ele.onmouseleave=function(){
+			menus[index].style.display="none";
+			menus[index].style.height=0;
+		}
+	})
 }
 //购物车
 {
 	let buy=document.querySelector(".head_buy");
 	let menu=document.querySelector(".buy_menu");
-	buy.onmouseover=function(){
-		// menu.style.display="block";
+	let top=document.querySelector(".buy_top");
+	top.onmouseover=function(){
 		menu.style.height="80px";
+		// menu.style.display="block";
 	}
 	buy.onmouseleave=function(){
-		// menu.style.display="none";
 		menu.style.height="0";
+		// menu.style.display="none";
 	}
 }
