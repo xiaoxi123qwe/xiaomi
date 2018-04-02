@@ -45,7 +45,7 @@
 	position: relative;
 }
 .buy_menu{
-	/* display: none; */
+	/*display: none;*/
 	opacity: 0;
 	position: absolute;
 	right: 0;
@@ -54,14 +54,15 @@
     padding: 15px 0 0;
     color: #424242;
     background: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
     z-index: 31;
-    transition: all .4s;
+    transition: all .3s ease-in;
 }
 .buy_content{
 	text-align: center;
 	font-size: 12px;
 	padding: 20px 0;
+	transition: all .6s ease-in;
 }
 .nav{
 	width: 100%;
@@ -94,7 +95,7 @@
 	height: 201px;
 	margin: 0 auto;
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .nav_menu{
 	float: left;
@@ -140,7 +141,6 @@
     padding: 1px 20px;
     border: 1px solid #ff6700;
     color: #ff6700;
-    /* display: inline; */
     line-height: 18px;
 }
 .nav_menu1:before{
@@ -811,7 +811,6 @@
 	 font-family: 'iconfont';
 	 color: #b0b0b0;
 	 font-size: 20px;
-	 line-height: 40px;
 }
 .head_car1{
 	font-size: 12px;
@@ -1288,10 +1287,21 @@ li{
 	left: 0;
 	transition: bottom 1s linear,opacity 1s linear;	
 	opacity: 0;
-	text-align: center;
 	cursor: pointer;
+	font-size: 12px;
+	padding: 8px 30px;
+	box-sizing: border-box;
+}
+.yingjian_tan .revive{
+	margin-bottom: 5px;
 	color: #fff;
-	font-size: 20px;
+	display: block;
+}
+.yingjian_tan .author{
+	color: rgba(255,255,255,0.6);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .yingjian_item:hover .yingjian_tan{
 	bottom:0;

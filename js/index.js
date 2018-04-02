@@ -217,11 +217,13 @@
 	let menu=document.querySelector(".buy_menu");
 	let top=document.querySelector(".buy_top");
 	top.onmouseover=function(){
-		menu.style.height="80px";
-		// menu.style.display="block";
+        	// menu.style.transition="all 1s ease-in";
+            menu.style.height="80px";
+            menu.style.opacity="1";
 	}
 	buy.onmouseleave=function(){
+        // menu.style.transition="all 1s ease-in";
 		menu.style.height="0";
-		// menu.style.display="none";
+		menu.style.opacity="0";
 	}
 }
